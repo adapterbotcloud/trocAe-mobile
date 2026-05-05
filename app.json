@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "TrocAê",
+    "slug": "trocAe-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "trocAe",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#22C55E"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.adapterbot.trocAe",
+      "infoPlist": {
+        "NSCameraUsageDescription": "O app precisa da câmera pra escanear figurinhas.",
+        "NSPhotoLibraryUsageDescription": "O app precisa da galeria pra adicionar fotos.",
+        "NSLocationWhenInUseUsageDescription": "O app usa sua localização pra encontrar trocas perto de você."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#22C55E"
+      },
+      "package": "com.adapterbot.trocAe",
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-auth-session"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "trocAe-mobile"
+      }
+    }
+  }
+}
